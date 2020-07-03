@@ -140,6 +140,16 @@ class ET_Email(ET_CUDSupport):
         super(ET_Email, self).__init__()
         self.obj_type = 'Email'
 
+class ET_SendSummary(ET_GetSupport):
+    def __init__(self):
+        super(ET_SendSummary, self).__init__()
+        self.obj_type = 'SendSummary'
+
+class ET_TriggeredSendSummary(ET_GetSupport):
+    def __init__(self):
+        super(ET_TriggeredSendSummary, self).__init__()
+        self.obj_type = 'TriggeredSendSummary'
+
 class ET_TriggeredSend(ET_CUDSupport):
     subscribers = None
     attributes  = None
